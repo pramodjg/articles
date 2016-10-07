@@ -1,0 +1,66 @@
+= Blockchain - Rebranding Industries
+:published_at: 2016-10-06
+:hp-tags: Blockchain, Industries, Disruption
+
+image::Blockchain-Logo-White-1.png[Patient_Trust, 300, 200, link="https://blog.blockchain.com/wp-content/uploads/2015/12/Blockchain-Logo-White-1.png"]
+
+Simply stating, Blockchain is a technology based on distributed computing and cryptography that enables peoples, to transact with previously unknown persons, and record transactions in a ledger. Its a new technology introduced mainly for financial transaction. The unique thing about blockchain is its decentralized nature. Which means that there will not be any trusted third-party for authorizing transactions like banks or financial institutions.
+
+In a blockchain network, data or transactions are recorded publicly. So it will be available to everybody in the network. Each one in the network will have a copy of the information. If anybody inside the network wants to change the information , the first step is to get approval from the members inside the network. Also for saving the changes made in the information, approval is needed from other members. Once the changes approved, the information belongs to each member will be updated. This is a simple explanation how blockchain works.
+
+Although the adoption of blockchain is happening slowly, it is a powerful technology or rather strategy that will disrupt all the existing business sectors in the current world. We hereby discussing a few business sector which will get disrupted by this powerful technology.
+
+Below is a list of some key features of block chain technology
+
+Security – hacking is impossible given the ledger is distributed across thousands of computers, reducing server maintenance requirements and improving security for banks.
+
+Transparency – the sender and recipient of each transactions are recorded and all transactions are publicly available for inspection.
+
+Privacy – users are anonymous and can move money around instantly and securely. This allows banks to save time and reduces costs on international
+
+Risk – currently, if a bank’s system goes down, users are unable to perform transactions. Using the blockchain technology, the bank’s system would continue as normal.
+
+== Banking
+
+All the Banking Institutions acts as secure store houses and transfer hubs for value. Blockchain will do the same for it is as a digitized, secure, and tamper-proof ledger.
+
+== Payments and Transactions
+
+Blockchain connects the payer and payee without any intermediate person to control the transactions. This will make instant money transfer possible.
+
+== Academic Sector
+
+We can make use of Blockchain technology for authorizing certificates. As it required that everybody inside the network need to approve, possibility of fraudulent activities will be reduced. Also it will make the procedure of issuing certificates more transparent.
+
+== Voting
+
+Authentication of voter’s identity, tracking of votes and trusted tallies to determine the winner, are the basic functions of an election procedure. Here blockchain can act as the medium for casting, tracking and counting votes thereby reducing chances of fowl-play. By casting votes as transactions within the blockchain, voters can agree on the final count because they can count the votes themselves, and because of the blockchain audit trail, they can verify that no votes were changed or removed, and no illegitimate votes were added.
+
+== Real Estate
+
+The main concerns for buying and selling property includes
+
+Lack of Transaparency during and after transactions
+Large amount of paperwork
+Possibility of fraud and errors in public records
+Blockchain offers a way to reduce the need for file-based record keeping and thereby speeding up the transactions. it can help record, track, and transfer land titles, property deeds, liens etc.
+
+== Healthcare
+
+Institutions in healthcare sector have an inability to securely share data across platforms. Better collaboration of data between providers ensures higher probability of accurate diagnoses, higher likelihood of effective treatments, and the overall increased ability of healthcare systems to deliver cost-effective care. Blockchain can allow hospitals, payers, and other parties in the healthcare value-chain to share access to their networks without compromising data security and integrity.
+
+== Supply Chain Management
+
+Supply chains are basically a series of transaction nodes that link to move products from point A to the point-of-sale or final deployment. By using blockchain, as products change hands across a supply chain from manufacture to sale, the transactions can be documented in a permanent decentralized record which reduces time delays, added costs, and human errors.
+
+== Cloud Storage
+
+Cloud storage is a very common feature in data handling. This will secure customers’ data in a centralized server which can mean increased network vulnerability from attacks by hackers. Blockchain cloud storage solutions allow storage to be decentralized, and therefore less prone to attacks that can cause systemic damage and widespread data loss.
+
+== Loyalty
+
+This technology can help retailer for offering gift cards and loyalty programs. It also makes those systems cheaper and secure. For no middle-,men are needed for issuing cards and transactions this method will be more efficient and cost effective. Blockchain’s unique verification capability save costs and help fraudulent activities.
+
+== Conclusion
+
+To wrap up , this a very small list of sectors blockchain going to disrupt. The area of application is very big and cannot be explain altogether.
