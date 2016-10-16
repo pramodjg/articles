@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://pramodjg.github.io/articles</link><generator>RSS for Node</generator><lastBuildDate>Fri, 07 Oct 2016 04:40:59 GMT</lastBuildDate><atom:link href="https://pramodjg.github.io/articles/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Blockchain for healthcare industry]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Untitled RSS Feed]]></title><description><![CDATA[Untitled RSS Feed]]></description><link>https://pramodjg.github.io/articles</link><generator>RSS for Node</generator><lastBuildDate>Sun, 16 Oct 2016 13:12:18 GMT</lastBuildDate><atom:link href="https://pramodjg.github.io/articles/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[communicating between components in react-native]]></title><description><![CDATA[<div class="paragraph">
+<p>React-Native is a javascript a library by facebook for developing user interfaces. To say it is a painless way to create user interfaces for mobile applications. It is very flexible language and can be used for developing user interfaces for major mobile platforms such as android and ios.</p>
+</div>
+<div class="paragraph">
+<p>In react-native we components play a main role. They can be used as a wrapper for other UI components. Sharing data between two components is an important for us whatever application we are going to develop.</p>
+</div>
+<div class="paragraph">
+<p>Let us discuss how to share data/values between two components in react-native. We need to use Navigator component in react-native for implementing this</p>
+</div>
+<div class="paragraph">
+<p>Initially we need to define the 'Navigator' inside index.android.js inside the render() function as below :</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;Navigator
+  initialRoute={{ id: 'screenid' }}
+  renderScene={(route, navigator) =&gt; this._renderScene(route, navigator)}
+/&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Inside the renderScene property of Navigator we are calling a custom function having name '_renderScene()'. It is inside the function we are going to define the screens for navigating. The code will be as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>_renderScene (route, navigator) {
+   _navigator = navigator;
+   switch (route.id) {
+     case 'screenid':
+       return (
+         &lt;Main_Screen navigator={navigator}/&gt;
+       )
+     case 'second':
+       return (
+         &lt;Second_Screen navigator={navigator}  {...route.passProps}/&gt;
+       )
+   }
+ }</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the code above we have given '{&#8230;&#8203;route.passProps}'. This is used for passing data or values to the "Second_Screen".</p>
+</div>
+<div class="paragraph">
+<p>You can now pass values to Second_Screen using the snippet given below :</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>this.props.navigator.push({
+       id: 'second',
+       name: 'second',
+       passProps: {
+       &lt;variable_name&gt;:&lt;value&gt;,
+       &lt;variable_name&gt;: &lt;value&gt;
+     }
+     });</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can access the values using the '&lt;variable_name&gt;' inside the Second_Screen using</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>this.props.&lt;variable_name&gt;</pre>
+</div>
+</div>]]></description><link>https://pramodjg.github.io/articles/2016/10/16/communicating-between-components-in-react-native.html</link><guid isPermaLink="true">https://pramodjg.github.io/articles/2016/10/16/communicating-between-components-in-react-native.html</guid><category><![CDATA[react-native]]></category><category><![CDATA[ android]]></category><category><![CDATA[ communication]]></category><category><![CDATA[ react-component]]></category><dc:creator><![CDATA[Pramod J George]]></dc:creator><pubDate>Sun, 16 Oct 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Blockchain for healthcare industry]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>The healthcare providers in the entire world offers high-end technologies for analysing and determining a particular disease. But there are certain key problems which are need to be rectified in the healthcare industry.</p>
