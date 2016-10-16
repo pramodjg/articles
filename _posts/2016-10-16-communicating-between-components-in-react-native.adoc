@@ -1,0 +1,61 @@
+= communicating between components in react-native
+:published_at: 2016-10-16
+:hp-tags: react-native, android, communication, react-component
+
+React-Native is a javascript a library by facebook for developing user interfaces. To say it is a painless way to create user interfaces for mobile applications. It is very flexible language and can be used for developing user interfaces for major mobile platforms such as android and ios.
+
+In react-native we components play a main role. They can be used as a wrapper for other UI components. Sharing data between two components is an important for us whatever application we are going to develop.
+
+Let us discuss how to share data/values between two components in react-native. We need to use Navigator component in react-native for implementing this
+
+Initially we need to define the 'Navigator' inside index.android.js inside the render() function as below :
+
+      <Navigator
+        initialRoute={{ id: 'screenid' }}
+        renderScene={(route, navigator) => this._renderScene(route, navigator)}
+      />
+
+Inside the renderScene property of Navigator we are calling a custom function having name '_renderScene()'. It is inside the function we are going to define the screens for navigating. The code will be as follows:
+
+       _renderScene (route, navigator) {
+          _navigator = navigator;
+          switch (route.id) {
+            case 'screenid':
+              return (
+                <Main_Screen navigator={navigator}/>
+              )
+            case 'second':
+              return (
+                <Second_Screen navigator={navigator}  {...route.passProps}/>
+              )
+          }
+        }
+        
+        
+        
+In the code above we have given '{...route.passProps}'. This is used for passing data or values to the "Second_Screen". 
+
+You can now pass values to Second_Screen using the snippet given below :
+
+     this.props.navigator.push({
+            id: 'second',
+            name: 'second',
+            passProps: {
+            <variable_name>:<value>,
+            <variable_name>: <value>
+          }
+          });
+          
+          
+          
+
+You can access the values using the '<variable_name>' inside the Second_Screen using 
+
+	this.props.<variable_name>
+
+
+
+
+
+
+
